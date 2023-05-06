@@ -69,7 +69,7 @@ def run_website():
             num_shareholders = st.text_input('Number of Shareholders')
 
         with col3:
-            median_share = st.selectbox('Median Share in %')
+            median_share = st.text_input('Median Share in %')
 
             
             # creating a button for Prediction
