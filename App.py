@@ -20,10 +20,7 @@ def run_website():
    with st.sidebar:
         selected = option_menu('Venture Capital Analysis Website',
                             
-                            ['Analytics Dashboard',
-                             'Categorical ranking',
-                            'Search',
-                            'Company Profile',
+                            [
                             'Prediction'],
                             default_index=0)
         
