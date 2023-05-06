@@ -12,6 +12,9 @@ scaler = StandardScaler()
 
 data = pd.read_csv("final dataset.csv")
 
+def load_model():
+    loaded_model = pickle.load(open("par_model.pkl", 'rb'))
+
 def run_website():
     
    with st.sidebar:
@@ -26,10 +29,6 @@ def run_website():
         
    if(selected == 'Prediction'):
         scaler = StandardScaler()
-
-        # loading the saved models
-
-        model = pickle.load(open("par_model.pkl",'rb'))
             
         # page title
         st.title('Company growth potential prediction')
