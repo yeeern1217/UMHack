@@ -6,7 +6,7 @@ import pickle
 import plotly.express as px
 import altair as alt 
 from sklearn.preprocessing import StandardScaler
-from pycaret.regression import *
+
 
 scaler = StandardScaler()
 
