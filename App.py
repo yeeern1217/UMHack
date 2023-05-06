@@ -13,7 +13,7 @@ data = pd.read_csv("final dataset.csv")
 
 def run_website():
     
-    with st.sidebar:
+   with st.sidebar:
         selected = option_menu('Vental Capital Analysis Website',
                             
                             ['Analytics Dashboard',
