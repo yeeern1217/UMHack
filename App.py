@@ -72,12 +72,13 @@ def run_website():
                 num_funding_rounds = (float(num_funding_rounds)-5.40612725e+00)/1.24999836e+01
                 num_shareholders = (float(num_shareholders)-4.40163699e+01)/  3.23090170e+01
                 median_share = (float(median_share)-2.45337900e+02)/1.47928736e+03
-
-                prediction = loaded_model.predict([total_funding_c, 
+                
+                input = pd.Dataframe([total_funding_c, 
                                              revenue_c, EBIT_c, 
                                              employee_growth_6percent, employee_growth_12percent, 
                                              num_founders,num_funding_rounds,num_shareholders,
-                                             median_share])
+                                             median_share], index = 0)
+                prediction = loaded_model.predict(input)
                 
                 st.write('Growth Potential Score: ', str(int(prediction)))
 
