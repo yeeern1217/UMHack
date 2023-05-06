@@ -70,14 +70,14 @@ def run_website():
                 employee_growth_6percent = (float(employee_growth_6percent)-3.11255708e+01)/ 1.11832148e+02
                 employee_growth_12percent = (float(employee_growth_12percent) - 2.56401771e+00)/2.88048906e+00
                 num_founders = (float(num_founders)-1.89497717e-01)/6.25324919e-01
-                num_founding_rounds = (float(num_founding_rounds)-5.40612725e+00)/1.24999836e+01
+                num_funding_rounds = (float(num_funding_rounds)-5.40612725e+00)/1.24999836e+01
                 num_shareholders = (float(num_shareholders)-4.40163699e+01)/  3.23090170e+01
                 median_share = (float(median_share)-2.45337900e+02)/1.47928736e+03
 
                 prediction = model.predict([total_funding_c, 
                                              revenue_c, EBIT_c, 
                                              employee_growth_6percent, employee_growth_12percent, 
-                                             num_founders,num_founding_rounds,num_shareholders,
+                                             num_founders,num_funding_rounds,num_shareholders,
                                              median_share])
                 
                 st.write('Growth Potential Score: ', str(int(prediction)))
