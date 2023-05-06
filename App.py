@@ -34,59 +34,49 @@ def run_website():
         col1, col2, col3 = st.columns(3)
         with col1:
             total_funding_c = st.text_input('Total Funding Till Date')
-            
-
+        
         with col2:
-            last_valuation_c = st.text_input('Last Valuation')
-        
-        with col3:
-            last_round_size_c = st.text_input('Amount Raised During Last Funding Round')
-        
-        with col1:
             revenue_c = st.text_input('Revenue for Latest Financial Year')
 
-        with col2:
+        with col3:
             revenue_growthpercent = st.text_input('Revenue Growth Compared to Last Financial Year')
 
-        with col3:
+        with col1:
             EBIT_c = st.text_input('Earnings before Interest and Fax')
 
-        with col1:
+        with col2:
             employee_growth_6percent = st.text_input('Employee Growth Past 6 Months')
 
-        with col2:
+        with col3:
             employee_growth_12percent = st.text_input('Employee Growth Past 12 Months')
 
 
-        with col3:
+        with col1:
             num_founders = st.text_input('Number of Founders')
 
-        with col1:
+        with col2:
             num_funding_rounds = st.text_input('Number of Funding Rounds')
 
-        with col2:
+        with col3:
             num_shareholders = st.text_input('Number of Shareholders')
 
-        with col3:
+        with col1:
             median_share = st.text_input('Median Share in %')
 
 
                     # creating a button for Prediction
-
+        
         if st.button('Predict Growth Potential Score'):
-
-                total_funding_c = scaler.transform(float(total_funding_c))  
-                last_valuation_c = scaler.transform(float(last_valuation_c))  
-                last_round_size_c = scaler.transform(float(last_round_size_c))  
-                revenue_c = scaler.transform(float(revenue_c))  
-                revenue_growthpercent = scaler.transform(float(revenue_growthpercent)) 
-                EBIT_c = scaler.transform(float(EBIT_c)) 
-                employee_growth_6percent = scaler.transform(float(employee_growth_6percent)) 
-                employee_growth_12percent = scaler.transform(float(employee_growth_12percent)) 
-                num_founders = scaler.transform(float(num_founders)) 
-                num_founding_rounds = scaler.transform(float(num_founding_rounds))  
-                num_shareholders = scaler.transform(float(num_shareholders)) 
-                median_share = scaler.transform(float(median_share))  
+                total_funding_c = (total_funding_c-1.22582666e+06)/1.02480673e+07 
+                revenue_c = (revenue_c-3.62958388e+06)/3.45839270e+07
+                revenue_growthpercent = (revenue_growthpercent-(-3.78585388e+05))/4.26659089e+06 
+                EBIT_c = (EBIT_c-6.20091324e+00)/3.69223645e+01)
+                employee_growth_6percent = (employee_growth_6percent-3.11255708e+01)/ 1.11832148e+02
+                employee_growth_12percent = (employee_growth_12percent - 2.56401771e+00)/2.88048906e+00
+                num_founders = (num_founders-1.89497717e-01)/6.25324919e-01
+                num_founding_rounds = (num_founding_rounds-5.40612725e+00)/1.24999836e+01
+                num_shareholders = (num_shareholders-4.40163699e+01)/  3.23090170e+01)
+                median_share = (median_share-2.45337900e+02)/1.47928736e+03
 
                 prediction = model.predict([total_funding_c, last_valuation_c, last_round_size_c, 
                                              revenue_c, revenue_growthpercent, EBIT_c, 
