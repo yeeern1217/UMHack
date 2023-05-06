@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import pickle
 import plotly.express as px
 import altair as alt
+import pycaret
 from sklearn.preprocessing import StandardScaler
 
 scaler = StandardScaler()
