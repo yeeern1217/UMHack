@@ -68,15 +68,15 @@ def run_website():
         
         if st.button('Predict Growth Potential Score'):
                 total_funding_c = (float(total_funding_c)-1.22582666e+06)/1.02480673e+07 
-                revenue_c = (((float)revenue_c)-3.62958388e+06)/3.45839270e+07
-                revenue_growthpercent = (((float)revenue_growthpercent)-(-3.78585388e+05))/4.26659089e+06 
-                EBIT_c = (((float)EBIT_c)-6.20091324e+00)/3.69223645e+01
-                employee_growth_6percent = (((float)employee_growth_6percent)-3.11255708e+01)/ 1.11832148e+02
-                employee_growth_12percent = (((float)employee_growth_12percent) - 2.56401771e+00)/2.88048906e+00
-                num_founders = (((float)num_founders)-1.89497717e-01)/6.25324919e-01
-                num_founding_rounds = (((float)num_founding_rounds)-5.40612725e+00)/1.24999836e+01
-                num_shareholders = (((float)num_shareholders)-4.40163699e+01)/  3.23090170e+01
-                median_share = (((float)median_share0-2.45337900e+02)/1.47928736e+03
+                revenue_c = (float(revenue_c)-3.62958388e+06)/3.45839270e+07
+                revenue_growthpercent = (float(revenue_growthpercent)-(-3.78585388e+05))/4.26659089e+06 
+                EBIT_c = (float(EBIT_c)-6.20091324e+00)/3.69223645e+01
+                employee_growth_6percent = (float(employee_growth_6percent)-3.11255708e+01)/ 1.11832148e+02
+                employee_growth_12percent = (float(employee_growth_12percent) - 2.56401771e+00)/2.88048906e+00
+                num_founders = (float(num_founders)-1.89497717e-01)/6.25324919e-01
+                num_founding_rounds = (float(num_founding_rounds)-5.40612725e+00)/1.24999836e+01
+                num_shareholders = (float(num_shareholders)-4.40163699e+01)/  3.23090170e+01
+                median_share = (float(median_share)-2.45337900e+02)/1.47928736e+03
 
                 prediction = model.predict([total_funding_c, 
                                              revenue_c, revenue_growthpercent, EBIT_c, 
