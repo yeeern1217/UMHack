@@ -5,16 +5,6 @@ import pandas as pd
 import numpy as np
 from streamlit_option_menu import option_menu
 
-def run_website():
-    
-   with st.sidebar:
-        
-        selected = option_menu('Venture Capital Analysis Website',
-                            ['Prediction'],
-                            default_index=0)
-        
-        if(selected == 'Prediction'):
-            
 
             def load_model():
                 loaded_model = pickle.load(open("VCmodel.pkl", 'rb'))
@@ -92,6 +82,3 @@ def run_website():
               loaded = load_model()
               prediction = loaded.predict(input)
               st.write('Based on features values, the revenue growth is ' + str(int(prediction)))
-
-
-run_website()
