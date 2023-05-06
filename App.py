@@ -14,7 +14,7 @@ data = pd.read_csv("final dataset.csv")
 def run_website():
     
    with st.sidebar:
-        selected = option_menu('Vental Capital Analysis Website',
+        selected = option_menu('Venture Capital Analysis Website',
                             
                             ['Analytics Dashboard',
                              'Categorical ranking',
@@ -24,14 +24,11 @@ def run_website():
                             default_index=0)
         
     if(selected == 'Prediction'):
-        import pickle
-        import streamlit as st
-
         scaler = StandardScaler()
 
         # loading the saved models
 
-        model = pickle.load(open("C:/Users/HP/Documents/hackathon/par_model_new.pkl",'rb'))
+        model = pickle.load(open("par_model_new.pkl",'rb'))
             
         # page title
         st.title('Company growth potential prediction')
