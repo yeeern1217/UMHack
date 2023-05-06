@@ -28,7 +28,7 @@ def run_website():
 
         # loading the saved models
 
-        model = pickle.load(open("par_model_new.pkl",'rb'))
+        model = pickle.load(open("par_model.pkl",'rb'))
             
         # page title
         st.title('Company growth potential prediction')
