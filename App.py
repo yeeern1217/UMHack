@@ -32,48 +32,41 @@ def run_website():
             
         # getting the input data from the user
         col1, col2, col3 = st.columns(3)
-            
         with col1:
             total_funding_c = st.text_input('Total Funding Till Date')
-            
-
-        with col2:
-            last_valuation_c = st.text_input('Last Valuation')
-        
-        with col3:
-            last_round_size_c = st.text_input('Amount Raised During Last Funding Round')
-        
-        with col1:
+            st.write("")
             revenue_c = st.text_input('Revenue for Latest Financial Year')
-
-        with col2:
-            revenue_growthpercent = st.text_input('Revenue Growth Compared to Last Financial Year')
-
-        with col3:
-            EBIT_c = st.text_input('Earnings before Interest and Fax')
-
-        with col1:
+            st.write("")
             employee_growth_6percent = st.text_input('Employee Growth Past 6 Months')
-
-        with col2:
-            employee_growth_12percent = st.text_input('Employee Growth Past 12 Months')
-
-
-        with col3:
+            st.write("")
             num_founders = st.text_input('Number of Founders')
-
-        with col1:
+            st.write("")
             num_funding_rounds = st.text_input('Number of Funding Rounds')
 
         with col2:
+            last_valuation_c = st.text_input('Last Valuation')
+            st.write("")
+            revenue_growthpercent = st.text_input('Revenue Growth Compared to Last Financial Year')
+            st.write("")
+            employee_growth_12percent = st.text_input('Employee Growth Past 12 Months')
+            st.write("")
             num_shareholders = st.text_input('Number of Shareholders')
-
-        with col3:
+            st.write("")
             median_share = st.text_input('Median Share in %')
 
-            
-            # creating a button for Prediction
-            
+        with col3:
+            last_round_size_c = st.text_input('Amount Raised During Last Funding Round')
+            st.write("")
+            EBIT_c = st.text_input('Earnings before Interest and Fax')
+            st.write("")
+            st.write("")
+            st.write("")
+            st.write("")
+
+
+
+                    # creating a button for Prediction
+
         if st.button('Predict Growth Potential Score'):
 
                 total_funding_c = scaler.transform(float(total_funding_c))  
