@@ -11,7 +11,7 @@ def run_website():
     
    with st.sidebar:
         
-        selected = option_menu('Venture Capital Analysis Website'
+        selected = option_menu('Venture Capital Analysis Website',
                             ['Prediction'],
                             default_index=0)
         
