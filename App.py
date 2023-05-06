@@ -1,3 +1,11 @@
+import streamlit as st 
+import pandas as pd
+from streamlit_option_menu import option_menu
+import plotly.graph_objs as go
+import pickle
+import plotly.express as px
+import altair as alt 
+from sklearn.preprocessing import StandardScaler
 
 def run_website():
     
@@ -9,14 +17,7 @@ def run_website():
                             default_index=0)
         
         if(selected == 'Prediction'):
-            import streamlit as st 
-            import pandas as pd
-            from streamlit_option_menu import option_menu
-            import plotly.graph_objs as go
-            import pickle
-            import plotly.express as px
-            import altair as alt 
-            from sklearn.preprocessing import StandardScaler
+            
 
             def load_model():
                 loaded_model = pickle.load(open("VCmodel.pkl", 'rb'))
