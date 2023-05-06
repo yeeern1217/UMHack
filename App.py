@@ -1,11 +1,9 @@
-import streamlit as st 
-import pandas as pd
-from streamlit_option_menu import option_menu
-import plotly.graph_objs as go
 import pickle
-import plotly.express as px
-import altair as alt 
-from sklearn.preprocessing import StandardScaler
+import sklearn
+import streamlit as st
+import pandas as pd
+import numpy as np
+
 
 def run_website():
     
