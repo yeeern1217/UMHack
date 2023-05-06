@@ -70,7 +70,7 @@ def run_website():
                 total_funding_c = (total_funding_c-1.22582666e+06)/1.02480673e+07 
                 revenue_c = (revenue_c-3.62958388e+06)/3.45839270e+07
                 revenue_growthpercent = (revenue_growthpercent-(-3.78585388e+05))/4.26659089e+06 
-                EBIT_c = (EBIT_c-6.20091324e+00)/3.69223645e+01)
+                EBIT_c = (EBIT_c-6.20091324e+00)/3.69223645e+01
                 employee_growth_6percent = (employee_growth_6percent-3.11255708e+01)/ 1.11832148e+02
                 employee_growth_12percent = (employee_growth_12percent - 2.56401771e+00)/2.88048906e+00
                 num_founders = (num_founders-1.89497717e-01)/6.25324919e-01
