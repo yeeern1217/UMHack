@@ -67,7 +67,7 @@ def run_website():
                     # creating a button for Prediction
         
         if st.button('Predict Growth Potential Score'):
-                total_funding_c = (((float)total_funding_c)-1.22582666e+06)/1.02480673e+07 
+                total_funding_c = (float(total_funding_c)-1.22582666e+06)/1.02480673e+07 
                 revenue_c = (((float)revenue_c)-3.62958388e+06)/3.45839270e+07
                 revenue_growthpercent = (((float)revenue_growthpercent)-(-3.78585388e+05))/4.26659089e+06 
                 EBIT_c = (((float)EBIT_c)-6.20091324e+00)/3.69223645e+01
