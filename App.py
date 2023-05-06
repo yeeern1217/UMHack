@@ -13,7 +13,7 @@ data = pd.read_csv("C:/Users/HP/Documents/hackathon/final dataset.csv")
 
 
 def run_website():
-    st.
+    
     with st.sidebar:
         selected = option_menu('Vental Capital Analysis Website',
                             
