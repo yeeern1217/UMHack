@@ -12,8 +12,7 @@ scaler = StandardScaler()
 
 data = pd.read_csv("final dataset.csv")
 
-def load_model():
-    loaded_model = pickle.load(open("par_model.pkl", 'rb'))
+loaded_model = pickle.load(open("par_model.pkl", 'rb'))
 
 def run_website():
     
