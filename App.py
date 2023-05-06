@@ -49,32 +49,32 @@ def run_website():
             # getting the input data from the user
             col1, col2, col3 = st.columns(3)
             with col1:
-                funding = st.text_input('Total Funding Till Date')
+                funding = float(st.text_input('Total Funding Till Date'))
 
             with col2:
-                revenue = st.text_input('Revenue for Latest Financial Year')
+                revenue = float(st.text_input('Revenue for Latest Financial Year'))
 
             with col3:
-                EBIT = st.text_input('Earnings before Interest and Fax')
+                EBIT = float(st.text_input('Earnings before Interest and Fax'))
 
             with col1:
-                e6 = st.text_input('Employee Growth Past 6 Months')
+                e6 = float(st.text_input('Employee Growth Past 6 Months'))
 
             with col2:
-                e12 = st.text_input('Employee Growth Past 12 Months')
+                e12 = float(st.text_input('Employee Growth Past 12 Months'))
 
 
             with col3:
-                founders = st.text_input('Number of Founders')
+                founders = float(st.text_input('Number of Founders'))
 
             with col1:
-                rounds = st.text_input('Number of Funding Rounds')
+                rounds = float(st.text_input('Number of Funding Rounds'))
 
             with col2:
-                shareholders = st.text_input('Number of Shareholders')
+                shareholders = float(st.text_input('Number of Shareholders'))
 
             with col3:
-                median = st.text_input('Median Share in %')
+                median = float(st.text_input('Median Share in %'))
 
             features = {
               'Funding': funding, 'Revenue':revenue, 'ebit':EBIT,
