@@ -78,7 +78,7 @@ def run_website():
                 num_shareholders = (num_shareholders-4.40163699e+01)/  3.23090170e+01)
                 median_share = (median_share-2.45337900e+02)/1.47928736e+03
 
-                prediction = model.predict([total_funding_c, last_valuation_c, last_round_size_c, 
+                prediction = model.predict([total_funding_c, 
                                              revenue_c, revenue_growthpercent, EBIT_c, 
                                              employee_growth_6percent, employee_growth_12percent, 
                                              num_founders,num_founding_rounds,num_shareholders,
