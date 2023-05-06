@@ -23,7 +23,7 @@ def run_website():
                             'Prediction'],
                             default_index=0)
         
-    if(selected == 'Prediction'):
+   if(selected == 'Prediction'):
         scaler = StandardScaler()
 
         # loading the saved models
