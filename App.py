@@ -9,8 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 scaler = StandardScaler()
 
-data = pd.read_csv("C:/Users/HP/Documents/hackathon/final dataset.csv")
-
+data = pd.read_csv("final dataset.csv")
 
 def run_website():
     
