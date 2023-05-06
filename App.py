@@ -4,7 +4,8 @@ from streamlit_option_menu import option_menu
 import plotly.graph_objs as go
 import pickle
 import plotly.express as px
-import altair as alt
+import altair as alt 
+pip import pycaret
 import pycaret
 from sklearn.preprocessing import StandardScaler
 
