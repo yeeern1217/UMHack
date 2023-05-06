@@ -58,7 +58,7 @@ def run_website():
             num_funding_rounds = st.text_input('Number of Funding Rounds')
 
         with col3:
-            num_shareholders = st.text_input('Number of Shareholders')
+            num_shareholders = st.text_input('Number of Shareholders'
 
         with col1:
             median_share = st.text_input('Median Share in %')
