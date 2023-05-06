@@ -75,7 +75,7 @@ def run_website():
                 employee_growth_12percent = (employee_growth_12percent - 2.56401771e+00)/2.88048906e+00
                 num_founders = (num_founders-1.89497717e-01)/6.25324919e-01
                 num_founding_rounds = (num_founding_rounds-5.40612725e+00)/1.24999836e+01
-                num_shareholders = (num_shareholders-4.40163699e+01)/  3.23090170e+01)
+                num_shareholders = (num_shareholders-4.40163699e+01)/  3.23090170e+01
                 median_share = (median_share-2.45337900e+02)/1.47928736e+03
 
                 prediction = model.predict([total_funding_c, 
